@@ -1,11 +1,11 @@
-About yt-napari
-===============
+About yt-napari-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yt-napari-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/data-exp-lab/yt-napari
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yt-napari-feedstock/blob/main/LICENSE.txt)
 
 Summary: A napari plugin for loading data from yt
 
