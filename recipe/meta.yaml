@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools-scm
   run:
     - magicgui >=0.4.0
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - packaging
     - pydantic
-    - python >=3.7
+    - python >=3.8
     - qtpy
     - unyt
     - yt >=4.0.1
