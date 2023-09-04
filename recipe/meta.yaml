@@ -22,10 +22,13 @@ requirements:
   run:
     - magicgui >=0.4.0
     - napari >=0.4.13
-    - npe2
+    # - npe2  # Declared but not used
     - numpy
+    - packaging
     - pydantic
     - python >=3.7
+    - qtpy
+    - unyt
     - yt >=4.0.1
 
 test:
@@ -38,10 +41,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/data-exp-lab/yt-napari
+  home: https://pypi.org/project/yt-napari
   summary: A napari plugin for loading data from yt
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/data-exp-lab/yt-napari
 
 extra:
   recipe-maintainers:
