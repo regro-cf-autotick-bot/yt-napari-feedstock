@@ -1,5 +1,5 @@
 {% set name = "yt-napari" %}
-{% set version = "0.0.1" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yt_napari-{{ version }}.tar.gz
-  sha256: 0aed07262cdbb55566b30ff0bcaf2f4a0340402b94515796a7fff6a97670c86b
+  sha256: 8289c52622afa30e8a38d4900d050040d2162aef167086ae566cd7b3441010c0
 
 build:
   noarch: python
@@ -17,15 +17,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools-scm
   run:
     - magicgui >=0.4.0
     - napari >=0.4.13
-    - npe2
+    # - npe2  # Declared but not used
     - numpy
+    - packaging
     - pydantic
-    - python >=3.7
+    - python >=3.8
+    - qtpy
+    - unyt
     - yt >=4.0.1
 
 test:
@@ -38,10 +41,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/data-exp-lab/yt-napari
+  home: https://pypi.org/project/yt-napari
   summary: A napari plugin for loading data from yt
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/data-exp-lab/yt-napari
 
 extra:
   recipe-maintainers:
