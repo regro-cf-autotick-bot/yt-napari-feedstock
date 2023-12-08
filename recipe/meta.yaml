@@ -1,5 +1,5 @@
 {% set name = "yt-napari" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yt_napari-{{ version }}.tar.gz
-  sha256: 8289c52622afa30e8a38d4900d050040d2162aef167086ae566cd7b3441010c0
+  sha256: 076a7a23ea5cbf80d7193fbaf69875e157db6eda8c45d40600273cd69605b5fa
 
 build:
   noarch: python
