@@ -20,9 +20,8 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - magicgui >=0.4.0
-    - napari >=0.4.13
-    # - npe2  # Declared but not used
+    - magicgui >=0.6.1
+    - napari >=0.4.19
     - numpy
     - packaging
     - pydantic
