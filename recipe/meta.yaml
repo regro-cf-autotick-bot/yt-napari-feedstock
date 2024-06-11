@@ -1,5 +1,5 @@
 {% set name = "yt-napari" %}
-{% set version = "0.3.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yt_napari-{{ version }}.tar.gz
-  sha256: 076a7a23ea5cbf80d7193fbaf69875e157db6eda8c45d40600273cd69605b5fa
+  sha256: bd44c105cde9c7fa79ba915a273e3c4ead1ddaf1394b81d4718a6e7d4b1e8ede
 
 build:
   noarch: python
@@ -20,9 +20,8 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - magicgui >=0.4.0
-    - napari >=0.4.13
-    # - npe2  # Declared but not used
+    - magicgui >=0.6.1
+    - napari >=0.4.19
     - numpy
     - packaging
     - pydantic
