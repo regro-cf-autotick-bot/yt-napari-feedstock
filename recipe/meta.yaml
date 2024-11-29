@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yt_napari-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/yt_napari-{{ version }}.tar.gz
   sha256: bd44c105cde9c7fa79ba915a273e3c4ead1ddaf1394b81d4718a6e7d4b1e8ede
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - magicgui >=0.6.1
@@ -25,7 +25,7 @@ requirements:
     - numpy
     - packaging
     - pydantic
-    - python >=3.8
+    - python >={{ python_min }}
     - qtpy
     - unyt
     - yt >=4.0.1
@@ -38,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/yt-napari
